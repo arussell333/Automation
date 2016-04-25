@@ -25,7 +25,7 @@ public class IphoneBasictest {
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone Simulator");
 		IOSDriver driver=new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		driver.get("https://www.google.co.uk");
+		driver.get("https://www.irishtimes.com");
 		Thread.sleep(4000);
 		driver.quit();
 		
